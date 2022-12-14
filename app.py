@@ -11,6 +11,7 @@ import fire
 import questionary
 from pathlib import Path
 import csv
+import os
 
 from qualifier.utils.fileio import load_csv
 
@@ -24,12 +25,13 @@ from qualifier.filters.credit_score import filter_credit_score
 from qualifier.filters.debt_to_income import filter_debt_to_income
 from qualifier.filters.loan_to_value import filter_loan_to_value
 
-def load_bank_data():
-    """Ask for the file path to the latest banking data and load the CSV file.
 
-    Returns:
-        The bank data from the data rate sheet CSV file.
-    """
+def load_bank_data():
+#    """Ask for the file path to the latest banking data and load the CSV file.
+
+#    Returns:
+#        The bank data from the data rate sheet CSV file.
+#    """
 
     csvpath = questionary.text("Enter a file path to a rate-sheet (.csv):").ask()
     csvpath = Path(csvpath)
@@ -122,20 +124,56 @@ def save_csv(qualifying_loans):
             writer.writerow(row)
         
             
-#def save_qualifying_loans(qualifying_loans):
-#    """"""Saves the qualifying loans to a CSV file.
+def save_qualifying_loans(qualifying_loans):
+#    Saves the qualifying loans to a CSV file.
 
 #    Args:
 #        qualifying_loans (list of lists): The qualifying bank loans.
 #    """
-# """  # @: Complete the usability dialog for savings the CSV Files.
-#    # YOUR CODE HERE!"""""
+#   @: Complete the usability dialog for savings the CSV Files.
+#   If the user does not enter a value, the default value will be no
+    save_response = questionary.confirm("Do you want to save your qualifying loans to a file?", default=False).ask()
+    
+    if save_response:
+        #Informing the user to just give a path and not a file name
+        print("Please only enter the path. No filenamnes. A default will be given.")
+        csv_location = questionary.path("Where do you want to save the loan information?").ask()
 
+    #Make sure the path entered by the user exists
+    path_exists = os.path.exists(csv_location)
+    
+    if path_exists:
+        
+        #The default file name
+        def_filename = 'qualifying_loans.csv'
+        
+        #The header of the csv file (the first line)
+        header = ['Lender', 'Max Loan Amount', 'Max LTV', 'Max DTI', 'Min Credit Score', 'Interest Rate']
+        
+        #Make a path variable to include the default file name 
+        absolute_path = os.path.join(csv_location, def_filename)
+        
+        with open(absolute_path, 'w', newline='') as f:
+           #Create the csv writer
+           writer = csv.writer(f)
+        
+           #Insert the header as the first line in the file
+           writer.writerow(header)
+        
+           #Put all of the qualifying loans into the qualifying_loans.csv file
+           for row in qualifying_loans:
+              writer.writerow(row)
+              
+        print("The qualifying_loans.csv file is located at " + absolute_path)
+    else:
+        print("The path you entered does not exist on this host!. Therefore, the file will not be saved.")
+        
 
 def run():
     """The main function for running the script."""
 
-    # Load the latest Bank data
+    
+    #Load the latest Bank data
     bank_data = load_bank_data()
 
     # Get the applicant's information
@@ -148,9 +186,10 @@ def run():
 
     # Save qualifying loans
     #save_qualifying_loans(qualifying_loans)
-    print(qualifying_loans)
+    #print(qualifying_loans)
     
-    save_csv(qualifying_loans)
+    #save_csv(qualifying_loans)
+    save_qualifying_loans(qualifying_loans)
 
 
 if __name__ == "__main__":

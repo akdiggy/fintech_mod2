@@ -16,9 +16,7 @@ This screen capture shows when a path is entered and there are no issues.
 
 This screen capture shows when an invalid path is entered to save the .csv file. 
 
-
-
-
+![title](images/wrong_path.png)
 
 ## Contributors
 

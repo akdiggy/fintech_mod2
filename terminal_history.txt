@@ -1,0 +1,50 @@
+  615  pwd
+  616  python app.py 
+  617  python app.py 
+  618  python app.py 
+  619  python app.py 
+  620  python app.py 
+  621  python app.py 
+  622  python app.py 
+  623  python app.py 
+  624  pwd
+  625  cd data/
+  626  ls -l 
+  627  pwd
+  628  cd ..
+  629  python app.py 
+  630  cd data
+  631  ls -l 
+  632  cat qualifying_loans.csv 
+  633  python -v
+  634  python -v
+  635  python -V
+  636  pwd
+  637  ls -l 
+  638  view qualifying_loans.csv 
+  639  cat daily_rate_sheet.csv 
+  640  ls -l 
+  641  cat qualifying_loans.csv 
+  642  git status
+  643  git commit -m "Getting the save_csv function to work"
+  644  git commit -m "Getting the save_csv function to work"
+  645  git add app.py
+  646  pwd
+  647  cd ..
+  648  git status
+  649  git add app.py 
+  650  git status
+  651  git commit -m "Getting the save_csv function to work"
+  652  git push
+  653  git status
+  654  pwd
+  655  git commit -m "Changed code for the save_qualifying_loans function"
+  656  git add app.py 
+  657  git status
+  658  git commit -m "Changed code for the save_qualifying_loans function"
+  659  git push
+  660  git status
+  661  git add README.md 
+  662  git commit -m "Testing adding an image to the README"
+  663  git push
+  664  history 50 > terminal_history.txt

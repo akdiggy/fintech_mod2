@@ -8,6 +8,18 @@ When the following values are entered (path to a rate sheet/credit score/current
 
 The app.py program was written using Python version 3.11. 
 
+## Installation Guide
+
+The Python modules listed below were used for this program to work. 
+
+![title](images/python_modules.png)
+
+A qualifier folder that contains all of the functions imported into the main app, organized into two subfolders:
+* filters, which includes .py files for all of your filter functions
+  * contains the following files: credit_score.py, debt_to_income.py,      loan_to_value.py, max_loan_size.py
+* utils, which includes your financial calculator module and your fileio module
+  * contains the following files: calculators.py, fileio.py
+
 ## Usage
 
 This screen capture shows when a path is entered and there are no issues. 

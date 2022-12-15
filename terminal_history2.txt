@@ -1,0 +1,50 @@
+  469  ls -l 
+  470  cd qualifier/
+  471  ls -l
+  472  cd filters/
+  473  ls -l 
+  474  pwd
+  475  cd ../..
+  476  /usr/local/bin/python3 /Users/akdiggy/repos/fintech_mod2/app.py
+  477  /usr/local/bin/python3 /Users/akdiggy/repos/fintech_mod2/app.py
+  478  /usr/local/bin/python3 /Users/akdiggy/repos/fintech_mod2/app.py
+  479  /usr/local/bin/python3 /Users/akdiggy/repos/fintech_mod2/app.py
+  480  /usr/local/bin/python3 /Users/akdiggy/repos/fintech_mod2/app.py
+  481  /usr/local/bin/python3 /Users/akdiggy/repos/fintech_mod2/app.py
+  482  /usr/local/bin/python3 /Users/akdiggy/repos/fintech_mod2/app.py
+  483  /usr/local/bin/python3 /Users/akdiggy/repos/fintech_mod2/app.py
+  484  /usr/local/bin/python3 /Users/akdiggy/repos/fintech_mod2/app.py
+  485  /usr/local/bin/python3 /Users/akdiggy/repos/fintech_mod2/app.py
+  486  /usr/local/bin/python3 /Users/akdiggy/repos/fintech_mod2/app.py
+  487  /usr/local/bin/python3 /Users/akdiggy/repos/fintech_mod2/app.py
+  488  /usr/local/bin/python3 /Users/akdiggy/repos/fintech_mod2/app.py
+  489  /usr/local/bin/python3 /Users/akdiggy/repos/fintech_mod2/app.py
+  490  /usr/local/bin/python3 /Users/akdiggy/repos/fintech_mod2/app.py
+  491  cd Desktop/
+  492  ls -l 
+  493  pwd
+  494  cd repos/fintech_mod2/
+  495  ls -l 
+  496  rm daily_rate_sheet.csv 
+  497  ls -l 
+  498  ls -l 
+  499  rm -rf filters/ utils/
+  500  ls -l 
+  501  cd Desktop/
+  502  ls -l 
+  503  pwd
+  504  pwd
+  505  ls -l 
+  506  cp Screenshot\ 2022-12-14\ at\ 7.59.01\ PM.png ~/repos/fintech_mod2/images/wrong_path.png
+  507  git status
+  508  pwd
+  509  ls -l
+  510  cp Screenshot\ 2022-12-14\ at\ 8.14.38\ PM.png ~/repos/fintech_mod2/images/python_modules.png
+  511  pwd
+  512  pwd
+  513  cd ~/repos/fintech_mod2/
+  514  git status
+  515  git add README.md app.py images/python_modules.png 
+  516  git status
+  517  ls -l 
+  518  history 50 > terminal_history2.txt

@@ -185,10 +185,6 @@ def run():
     )
 
     # Save qualifying loans
-    #save_qualifying_loans(qualifying_loans)
-    #print(qualifying_loans)
-    
-    #save_csv(qualifying_loans)
     save_qualifying_loans(qualifying_loans)
 
 

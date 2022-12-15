@@ -1,0 +1,50 @@
+  489  /usr/local/bin/python3 /Users/akdiggy/repos/fintech_mod2/app.py
+  490  /usr/local/bin/python3 /Users/akdiggy/repos/fintech_mod2/app.py
+  491  cd Desktop/
+  492  ls -l 
+  493  pwd
+  494  cd repos/fintech_mod2/
+  495  ls -l 
+  496  rm daily_rate_sheet.csv 
+  497  ls -l 
+  498  ls -l 
+  499  rm -rf filters/ utils/
+  500  ls -l 
+  501  cd repos/fintech_mod2/
+  502  ls -l 
+  503  vi README.md 
+  504  git status
+  505  git add README.md 
+  506  git commit -m "Updating README"
+  507  git push
+  508  'pwd
+  509  ls -l 
+  510  mkdir images
+  511  cp ~/Desktop/Screenshot\ 2022-12-14\ at\ 6.33.38\ PM.png images/
+  512  vi README.md 
+  513  git status
+  514  git add README.md 
+  515  git status
+  516  git commit -m "Testing adding screen captures to my README"
+  517  git push
+  518  git add images/
+  519  git commit -m "I forgot to add the images directory"
+  520  git push
+  521  vi README.md 
+  522  git add README.md 
+  523  git commit -m "Keep trying to get my screen capture in my README"
+  524  git push
+  525  pwd
+  526  cd images/
+  527  ls -l 
+  528  mv Screenshot\ 2022-12-14\ at\ 6.33.38\ PM.png test.png
+  529  ls -l 
+  530  cd ..
+  531  vi README.md 
+  532  git status
+  533  pwd
+  534  cat README.md 
+  535  git add README.md images/test.png 
+  536  git commit -m "Keep trying with the screen capture"
+  537  git push
+  538  history 50 > terminal_history1.txt
